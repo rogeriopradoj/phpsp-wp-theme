@@ -42,7 +42,7 @@ tha_entry_before(); ?>
 
 if ( get_the_author_meta( 'description' ) AND is_multi_author() ) : // If a user has filled out their description and this is a multi-author blog, show a bio on their entries ?>
 <aside id="author-info" class="row">
-	<h2 class="span8"><?php printf( __( 'About %s', 'the-bootstrap' ), get_the_author() ); ?></h2>
+	<h2 class="span8 grey-block"><?php printf( __( 'About %s', 'the-bootstrap' ), get_the_author() ); ?></h2>
 	<div id="author-avatar" class="span1">
 		<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'the_bootstrap_author_bio_avatar_size', 70 ) ); ?>
 	</div><!-- #author-avatar -->
