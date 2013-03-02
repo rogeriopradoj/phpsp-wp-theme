@@ -14,8 +14,10 @@
  * @since		1.0.0 - 05.02.2012
  */
 
-get_header(); ?>
-
+get_header(); 
+echo PHPSP_Menu::getBanner();
+?>
+<!-- asd -->
 <section id="primary" class="span8">
 	<?php tha_content_before(); ?>
 	<div id="content" role="main">
