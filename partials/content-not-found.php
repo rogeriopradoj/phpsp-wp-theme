@@ -14,7 +14,7 @@ tha_entry_before(); ?>
 	<?php tha_entry_top(); ?>
 	
 	<header class="page-header">
-		<h1 class="entry-title"><?php _e( 'Nothing Found', 'the-bootstrap' ); ?></h1>
+		<h1 class="entry-title grey-block"><?php _e( 'Nothing Found', 'the-bootstrap' ); ?></h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

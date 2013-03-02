@@ -1,0 +1,31 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+.blue-block,.black-block,.grey-block{
+    border-bottom: 1px solid #E1E1E1;
+    font-weight: normal;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+.blue-block{
+    background:transparent url(img/blue-block.gif) no-repeat left bottom;
+    color:#1B75BB;
+}
+.black-block{
+    background:transparent url(img/black-block.gif) no-repeat left bottom;
+    color:#000;
+}
+.grey-block{
+    background:transparent url(img/grey-block.gif) no-repeat left bottom;
+    color:#777;
+}
+.page-header{
+    border-bottom:1px none;
+}
+
+.widget-title{
+    font-weight: normal;
+}
+h1,h2,h3,h4,h2 strong{
+    font-weight: normal;
+}

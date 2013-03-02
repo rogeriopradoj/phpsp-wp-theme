@@ -20,7 +20,7 @@ get_header(); ?>
 		<article id="post-0" class="post error404 not-found">
 			<?php tha_entry_top(); ?>
 			<header class="page-header">
-				<h1 class="entry-title"><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'the-bootstrap' ); ?></h1>
+				<h1 class="entry-title grey-block"><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'the-bootstrap' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<div class="entry-content">
