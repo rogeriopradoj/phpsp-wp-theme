@@ -16,10 +16,56 @@
 
 get_header(); ?>
 
-<section id="primary" class="span8">
+<section id="primary" class="span12">
 	<?php tha_content_before(); ?>
 	<div id="content" role="main">
-		<?php tha_content_top();
+            <div class="row">
+                <h3 class="span12 home-image"></h3>
+            </div>
+             <div class="row">
+                <div class="span4">
+                    <h3 class="black-block">Próximos Eventos</h3>
+                    <?php $args = array( 'category_name' => 'eventos', 'posts_per_page' => 5 );
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ): $loop->the_post();?>
+                    <div class="row-fluid article-phpsp-home">
+                        <div class="span12">
+                            <div><a href="<?php the_permalink(); ?>"><?php echo the_title();?></a></div>
+                            <small>por <?php the_excerpt()?></small>
+                        </div>
+                    </div>
+                        <?php endwhile; ?>
+                </div>
+                <div class="span4">
+                    <h3 class="blue-block">Artigos da comunidade</h3>
+                    <?php $args = array( 'category_name' => 'artigos', 'posts_per_page' => 5 );
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ): $loop->the_post();?>
+                    <div class="row-fluid article-phpsp-home">
+                        <div class="span3">
+                            <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'the-bootstrap_author_bio_avatar_size', 70 ) ); ?>
+                            
+                        </div>
+                        <div class="span9">
+                            <div><a href="<?php the_permalink(); ?>"><?php echo the_title();?></a></div>
+                            <small>por <?php the_author()?></small>
+                        </div>
+                    </div>
+                    <?php endwhile; ?>
+                </div>
+                <div class="span4">
+                    <h3 class="grey-block">Avisos</h2>
+                    <?php $loop = new WP_Query( array( 'category_name' => 'avisos', 'posts_per_page' => 1 ) );
+                          $loop->the_post(); ?>
+                    <div class="row-fluid article-phpsp-home">
+                        <div class="span12">
+                            <div><?php echo get_post(); ?></div>
+                            <small>por <?php the_author()?></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		<?/*php tha_content_top();
 		
 		if ( have_posts() ) {
 			while ( have_posts() ) {
@@ -32,13 +78,13 @@ get_header(); ?>
 			get_template_part( '/partials/content', 'not-found' );
 		}
 	
-		tha_content_bottom(); ?>
+		tha_content_bottom(); */?>
 	</div><!-- #content -->
 	<?php tha_content_after(); ?>
 </section><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
 
 
