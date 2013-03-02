@@ -8,15 +8,15 @@ body{
     margin-bottom: 10px;
 }
 .blue-block{
-    background:transparent url(img/blue-block.gif) no-repeat left bottom;
+    background:transparent url(../img/blue-block.gif) no-repeat left bottom;
     color:#1B75BB;
 }
 .black-block{
-    background:transparent url(img/black-block.gif) no-repeat left bottom;
+    background:transparent url(../img/black-block.gif) no-repeat left bottom;
     color:#000;
 }
 .grey-block{
-    background:transparent url(img/grey-block.gif) no-repeat left bottom;
+    background:transparent url(../img/grey-block.gif) no-repeat left bottom;
     color:#777;
 }
 .page-header{
