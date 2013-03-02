@@ -226,39 +226,10 @@ img.wp-smiley {
 
 /* =Footer
 -------------------------------------------------------------- */
-
-#colophon .credits {
-	margin: 0;
-}
-
-#site-generator {
-	float: right;
-        font-family: 'Source Sans Pro', sans-serif;
-	/*font-family: Georgia, "Bitstream Charter", serif;*/
-	font-style: italic;
-}
-
-#site-generator a {
-	background: url("img/wordpress.png") no-repeat scroll left center transparent;
-	color: #787878;
-	display: inline-block;
-	line-height: 16px;
-	padding-left: 20px;
-	text-decoration: none;
-}
-
-#site-generator.footer-nav-menu a {
-	margin-top: 10px;
-}
-
-table .label {
-	background-color: transparent;
-	border-radius: none;
-	color: inherit;
-	font-size: inherit;
-	text-transform: inherit;
-}
-
+div#sponsor-box { display: block; float: left; }
+div#sponsor-box ul { display: block; }
+div#sponsor-box ul li { display: inline; float: left; }
+div#sponsor-box ul li a { width: 185px; height: 50px; text-indent: -9999px; }
 
 /* =Jetpack Support
 -------------------------------------------------------------- */
