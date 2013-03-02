@@ -64,6 +64,8 @@ function the_bootstrap_setup() {
 	 */
 	require_once( get_template_directory() . '/inc/nav-menu-walker.php' );
 	
+
+
 	/**
 	 * Theme Hook Alliance
 	 */
@@ -87,6 +89,10 @@ function the_bootstrap_setup() {
 endif;
 add_action( 'after_setup_theme', 'the_bootstrap_setup' );
 
+/**
+ * PHPSP - Custom Banner Menu Page
+ */
+require_once( get_template_directory() . '/inc/phpsp-menu-banner.php');
 
 /**
  * Returns the options object for The Bootstrap.
