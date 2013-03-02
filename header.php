@@ -33,7 +33,7 @@
 
         <header class="header-container">
             <section class="header-section wrapper clearfix">
-              <h1 class="title"><img src="img/logo.png" alt=""></h1>
+              <h1 class="title"><img src="<?php bloginfo('template_url') ?>/img/logo.png" alt=""></h1>
               <div class="blogingo">Grupo de Desenvolvedores PHP de São Paulo</div>
               <form class="form-search" action="" method="post" accept-charset="utf-8">
                 <input type="text" name="searc" value="" placeholder="Buscar no PHPSP">
