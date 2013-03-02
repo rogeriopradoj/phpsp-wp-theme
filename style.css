@@ -3,8 +3,10 @@
  * Theme Name:	The PHPSP Bootstrap 
  * Theme URI:	http://en.wp.obenland.it/the-bootstrap/
  * Description:	Oppa Gangnam Style... in Sao Paulo
- * Author:	Konstantin Obenland, PHPSP
+ * Author:	Konstantin Obenland
  * Author URI:	http://en.wp.obenland.it/
+ * Author:	PHPSP
+ * Author URI:	http://phpsp.org.br/
  * Version:		0.0.1
  * Tags:		black, blue, white, light, custom-background, custom-header, custom-menu, featured-images, flexible-header, flexible-width, full-width-template, left-sidebar, microformats, post-formats, right-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, two-columns
  * Text Domain:	the-bootstrap
@@ -231,7 +233,8 @@ img.wp-smiley {
 
 #site-generator {
 	float: right;
-	font-family: Georgia, "Bitstream Charter", serif;
+        font-family: 'Source Sans Pro', sans-serif;
+	/*font-family: Georgia, "Bitstream Charter", serif;*/
 	font-style: italic;
 }
 
