@@ -19,6 +19,12 @@ body{
     background:transparent url(../img/grey-block.gif) no-repeat left bottom;
     color:#777;
 }
+h3.blue-block,h3.black-block,h3.grey-block{
+    border-bottom: 1px solid #E1E1E1;
+    font-weight: normal;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
 .page-header{
     border-bottom:1px none;
 }
@@ -29,3 +35,15 @@ body{
 h1,h2,h3,h4,h2 strong{
     font-weight: normal;
 }
+.home-image{
+    background: #FFF url("http://placehold.it/920x250/1B75BB/ffffff/&text=The+New+PHPSP");
+    -moz-background-size:100% 100%; /* Old Firefox */
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    height:250px;
+    border-radius:4px
+}
+.article-phpsp-home{
+    margin:20px auto;
+}
+
