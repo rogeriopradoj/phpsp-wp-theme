@@ -13,7 +13,6 @@
 <html class="no-js" <?php language_attributes(); ?>>
 	<head>
 		<?php tha_head_top(); ?>
-		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
@@ -21,11 +20,17 @@
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
 
 		<?php tha_head_bottom(); ?>
-		<?php wp_head(); ?>
-		<link href="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/phpsp-wp-theme/css/phpsp.css" rel="stylesheet" type="text/css"/>
+        <?php wp_head(); ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/normalize.min.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/main.css">
+        <link href="<?php bloginfo('template_url') ?>/css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php bloginfo('template_url') ?>/css/phpsp.css" rel="stylesheet" type="text/css"/>
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	
     <body <?php body_class(); ?>>
+
         <header class="header-container">
             <section class="header-section wrapper clearfix">
               <h1 class="title"><img src="img/logo.png" alt=""></h1>
