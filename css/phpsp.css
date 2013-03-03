@@ -46,7 +46,6 @@ h1,h2,h3,h4,h2 strong{
 .article-phpsp-home{
     margin:20px auto;
 }
-
 /* =reset
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .clear { clear: both; float: none; }
@@ -69,3 +68,4 @@ div#footerx { display: block;  background: #e6e0ff; background: -moz-linear-grad
     div#creative-commons { margin: auto; display: block; border-top: 1px solid #aaaaaa; }
     div#creative-commons a.img-cc { margin: 22px 5px 0 0; float: left; display: block; } 
     div#creative-commons p.desc-cc { font: 10px; margin: 18px 0 0 5px; float: left; display: block; }
+
