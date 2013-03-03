@@ -20,11 +20,12 @@
                         <div class="blocker-sponsor">
 	                        <div id="sponsor-box">
 	                            <ul>
-	                                <li><a class="" href="#" title="UOL Host" target="_blank"><img src="<?php echo esc_url(home_url( '/' )) ?>wp-content/themes/phpsp-wp-theme/img/sponsor_00.png"/></a></li>
-	                                <li><a class="" href="#" title="PHP" target="_blank"><img src="<?php echo esc_url(home_url( '/' )) ?>wp-content/themes/phpsp-wp-theme/img/sponsor_01.png" /></a></li>
-	                                <li><a class="" href="#" title="MS Windows Server 2008" target="_blank"><img src="<?php echo esc_url(home_url( '/' )) ?>wp-content/themes/phpsp-wp-theme/img/sponsor_02.png" /></a></li>
-	                                <li><a class="" href="#" title="IIS" target="_blank"><img src="<?php echo esc_url(home_url( '/' )) ?>wp-content/themes/phpsp-wp-theme/img/sponsor_03.png" /></a></li>
-	                                <li><a class="" href="#" title="iMasters" target="_blank"><img src="<?php echo esc_url(home_url( '/' )) ?>wp-content/themes/phpsp-wp-theme/img/sponsor_04.png" /></a></li>
+                                    <li>
+                                        <a class="" href="#" title="UOL Host" target="_blank"><img src="<?php echo bloginfo('template_url') ?>/img/sponsor_00.png"/></a></li>
+	                                <li><a class="" href="#" title="PHP" target="_blank"><img src="<?php echo bloginfo('template_url') ?>/img/sponsor_01.png" /></a></li>
+	                                <li><a class="" href="#" title="MS Windows Server 2008" target="_blank"><img src="<?php echo bloginfo('template_url') ?>/img/sponsor_02.png" /></a></li>
+	                                <li><a class="" href="#" title="IIS" target="_blank"><img src="<?php echo bloginfo('template_url') ?>/img/sponsor_03.png" /></a></li>
+	                                <li><a class="" href="#" title="iMasters" target="_blank"><img src="<?php echo bloginfo('template_url') ?>/img/sponsor_04.png" /></a></li>
 	                            </ul>
 	                        </div>
 	                    </div>
