@@ -16,16 +16,19 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
-		<title><?php wp_title( '&laquo;', true, 'right' ); ?></title>
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
+        <title><?php wp_title( '&laquo;', true, 'right' ); ?></title>
 
 		<?php tha_head_bottom(); ?>
         <?php wp_head(); ?>
+
+        <!-- styles -->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/main.css" />
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/phpsp.css" />
 
+        <!-- scripts -->
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	
@@ -52,10 +55,10 @@
               <div class="clearfix nav-topo">
                 <ul id="menu-principal" class="container menu">
                   <li id="menu-item-367" class="menu-item current-menu-item current_page_item menu-item-367">
-                    <a title="Página inicial" href="http://infosign.net.br">Artigos</a>
+                    <a title="Página inicial" href="#">Artigos</a>
                   </li>
                   <li id="menu-item-868" class="menu-item menu-item-868">
-                    <a href="http://infosign.net.br/topico/envelopamento-de-carros/">Envelopamento</a>
+                    <a href="#">Envelopamento</a>
                   </li>
                 </ul>                
               </div>
