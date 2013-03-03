@@ -50,7 +50,7 @@
             </section>
             <nav class="clearfix nav">
               <div class="clearfix nav-topo">
-                <ul id="menu-principal" class="wrapper menu">
+                <ul id="menu-principal" class="container menu">
                   <li id="menu-item-367" class="menu-item current-menu-item current_page_item menu-item-367">
                     <a title="Página inicial" href="http://infosign.net.br">Artigos</a>
                   </li>
