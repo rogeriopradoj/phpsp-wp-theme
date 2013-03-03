@@ -21,18 +21,26 @@
 
 		<?php tha_head_bottom(); ?>
         <?php wp_head(); ?>
-        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/normalize.min.css">
-        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/main.css">
-        <link href="<?php bloginfo('template_url') ?>/css/main.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php bloginfo('template_url') ?>/css/phpsp.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/phpsp.css" />
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
 	
     <body <?php body_class(); ?>>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=263822843721947";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
         <header class="header-container">
-            <section class="header-section wrapper clearfix">
+            <section class="header-section container clearfix">
               <h1 class="title"><img src="<?php bloginfo('template_url') ?>/img/logo.png" alt=""></h1>
               <div class="blogingo">Grupo de Desenvolvedores PHP de São Paulo</div>
               <form class="form-search" action="" method="post" accept-charset="utf-8">
