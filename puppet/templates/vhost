@@ -1,18 +1,18 @@
 <VirtualHost *:80>
 	ServerAdmin jamaica@phpsp.org.br
 
-	DocumentRoot /vagrant
+	DocumentRoot /var/www/phpsp-blog
 
-	<Directory />
+	<Directory /var/www>
 		Options FollowSymLinks
 		AllowOverride None
 	</Directory>
 
-	<Directory /vagrant>
+	<Directory /var/www/phpsp-blog>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride All
 		Order allow,deny
-		allow from all
+		Allow from all
 	</Directory>
 
 	ErrorLog /var/log/apache2/error.log

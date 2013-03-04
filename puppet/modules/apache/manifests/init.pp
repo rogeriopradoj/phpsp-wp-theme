@@ -1,14 +1,14 @@
-class apache 
-{      
-    package 
-    { 
+class apache
+{
+    package
+    {
         "apache2":
             ensure  => present,
             require => Exec['apt-get update']
     }
-    
-    service 
-    { 
+
+    service
+    {
         "apache2":
             ensure      => running,
             enable      => true,
@@ -19,24 +19,24 @@ class apache
             ],
     }
 
-    file 
-    { 
+    file
+    {
         "/etc/apache2/mods-enabled/rewrite.load":
             ensure  => link,
             target  => "/etc/apache2/mods-available/rewrite.load",
             require => Package['apache2'],
     }
 
-    file 
-    { 
+    file
+    {
         "/etc/apache2/sites-available/default":
             ensure  => present,
-            source  => "/vagrant/puppet/templates/vhost",
+            source  => "/vagrant/.puppet/templates/vhost",
             require => Package['apache2'],
     }
 
-    exec 
-    { 
+    exec
+    {
         'echo "ServerName localhost" | sudo tee /etc/apache2/conf.d/fqdn':
             require => Package['apache2'],
     }

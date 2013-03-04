@@ -1,8 +1,9 @@
-class other 
+class other
 {
-    package 
-    { 
-        "curl":
+    $packages = ["curl", "unzip", "tree"]
+    package
+    {
+        $packages:
             ensure  => present,
             require => Exec['apt-get update']
     }
