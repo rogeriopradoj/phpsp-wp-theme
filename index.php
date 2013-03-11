@@ -15,6 +15,10 @@
  */
 
 get_header(); 
+?>
+<div class="main-container container">
+    <div id="page" class="hfeed wrapper row">
+<?php
 echo PHPSP_Menu::getBanner();
 ?>
 <!-- asd -->
